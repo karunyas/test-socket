@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- second commit-->
+	<title>Treasure Hunt</title>
+	<!-- 
+	<script src="button-java.js" ></script>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 -->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	
+	<script src="/socket.io/socket.io.js"></script>
+
+	<script src="button-java.js"></script>
+	<link rel="stylesheet" type ="text/css" href="button-style.css"> 	
+</head>
+
+<body>
+	<p id = "heading"> Welcome to this test site, please click the 'Enter' button to start playing. </p>
+	<!--button id= "enter" type="button">Enter!</button-->
+	<button id = "enter" class="ui-btn ui-corner-all">Enter</button>
+	<button id = "time" class="ui-btn ui-corner-all">See what time it is</button>
+
+	<p id = "instr" style="display:none">
+	Now open whichever drawer you think contains the treasure or choose a place to continue your journey to by clicking on the associated element.
+	</p>
+
+	<div id="flip" style="display:none">DRAWER ONE</div>
+	<div id="panel" >Unfortunately, fate was not on your side today.</div>
+
+	<div id="flip2" style="display:none">DRAWER TWO</div>
+	<div id="panel2" >~YOU STRUCK GOLD~
+	click to receive your reward</div>
+
+	<div id="flip3" style="display:none">DRAWER THREE</div>
+	<div id="panel3" >Nope, you must continue searching.</div>
+
+
+	<!-- random image gallery that is moderately responsive -->
+	<div id="norway" class="box" style="display:none">
+		<div class="boxInner">
+			<img src="norway.jpg"/>
+	    	<div class="titleBox"> The one true </div>
+		</div>
+	</div>
+	<div id="forest" class="box" style="display:none">
+		<div class="boxInner">
+			<img src="forest.jpg"/>
+	    	<div class="titleBox">Add a description of the image here</div>
+		</div>
+	</div>
+	<div id = "mtn" class="box" style="display:none">
+		<div class="boxInner">
+			<img src="mtn.jpg"/>
+	    	<div class="titleBox">Add a description of the image here</div>
+		</div>
+	</div>
+	<div id = "nlights" class="box" style="display:none">
+		<div class="boxInner">
+			<img src="nlights.jpg"/>
+	    	<div class="titleBox">Add a description of the image here</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
+
+
+<!-- 
+	<div class="responsive">
+	  <div class="gallery">
+	    <a target="_blank" href="norway.jpg">
+	      <img src="norway.jpg" alt="Trolltunga Norway" width="300" height="200">
+	    </a>
+	    <div class="desc">Add a description of the image here</div>
+	  </div>
+	</div>
+
+
+	<div class="responsive">
+	  <div class="gallery">
+	    <a target="_blank" href="forest.jpg">
+	      <img src="forest.jpg" alt="Forest" width="600" height="400">
+	    </a>
+	    <div class="desc">Add a description of the image here</div>
+	  </div>
+	</div>
+
+	<div class="responsive">
+	  <div class="gallery">
+	    <a target="_blank" href="nlights.jpg">
+	      <img src="nlights.jpg" alt="Northern Lights" width="600" height="400">
+	    </a>
+	    <div class="desc">Add a description of the image here</div>
+	  </div>
+	</div>
+
+	<div class="responsive">
+	  <div class="gallery">
+	    <a target="_blank" href="mtn.jpg">
+	      <img src="mtn.jpg" alt="Mountains" width="600" height="400">
+	    </a>
+	    <div class="desc">Add a description of the image here</div>
+	  </div>
+	</div>
+
+	<div style="padding:6px;">
+	-->
