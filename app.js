@@ -9,7 +9,7 @@ var io = require('socket.io')(http);
 app.get('/', function(req, res) {
   res.sendFile(__dirname + '/index.html');
 });
-
+//changed
 // allows the browser to go look at external css sytlesheet and the external js script
 // dot indicates current library
 app.use(express.static('.'))
